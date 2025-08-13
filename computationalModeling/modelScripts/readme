@@ -1,1 +1,53 @@
+This constitutes all of the files used to estimate the various drift-diffusion models (DDMs). The basic procedure is the same for all them.
 
+The jobs are submitted using sh (name of parallWrap script). This then submits an a "submitJob" for each individual subject, which then goes into an "estParams" script and then a "fitFcn" script.
+
+The real part of the script lie in the "estParams" and "fitFcn" scripts. The former sets up the rough grid and estimation procedure for each parameter of interest, while the latter does the actual model fitting and estimation of the model fit. 
+More information can be found in each individual scripts. 
+
+There are two levels of DDMS here. The first level are the DDMs for no-distractor trials. This includes the following:
+
+1). The "regular" DDM
+  1a). parallelWrap_noDist.sh
+  1b). submitJob_noDist.sh
+  1c). estparams_noDist.m
+  1d). fitFcn_noDist.m
+2). The "regular" attentional DDM
+  2a). parallelWrap_addm_noDist.sh
+  2b). submitjob_addm_noDist.sh
+  2c). estparams_addm_noDist.m
+  2d). fitFcn_addm_noDist.m
+3). The "modified first fixation" attentional DDM.
+  3a). parallelWrap_addm_noDist_firstFixnoRV.sh
+  3b). submitjob_addm_noDist_firstFixnoRV.sh
+  3c). estparams_addm_noDist_firstFixnoRV.m
+  3d).  fitFcn_addm_noDist_firstFixnoRV.m
+
+The second level are the DDMs for the distractor trials. This includes the following:
+
+1). The accumulation model
+  1a). parallelWrap_Dist_2ndSampleDistDur2.sh
+  1b). submitJob_Dist_2ndSampleDistDur2.sh
+  1c). estparams_Dist_2ndSampleDistDur2.m
+  1d). fitFcn_Dist_2ndSampleDistDur2.m
+2). The accumulation model with a modified first fixation
+  2a). parallelWrap_Dist_firstFixnoRV.sh
+  2b). submitJob_Dist_firstFixnoRV.sh
+  2c). estparams_Dist_firstFixnoRV.m
+  2d). fitFcn_Dist_firstFixnoRV.m
+3). The decay model
+  3a). parallelWrap_Dist_decay.sh
+  3b). submitJob_Dist_decay.sh
+  3c). estparams_Dist_decay.m
+  3d). fitFcn_Dist_decay.m
+4). The decay model with a modified first fixation
+  4a). parallelWrap_Dist_decay_firstFixnoRV.sh
+  4b). submitJob_Dist_decay_firstFixnoRV.sh
+  4c). estparams_Dist_decay_firstFixnoRV.
+  4d). fitFcn_Dist_decay_firstFixnoRV.m
+
+getGaze.m is an auxillary script used to get fixation related information.
+
+All models were estimated in MATLAB using a Sun Grid Engine computing cluster.
+
+Note: Please forgive some of the odd names. I have kept them as is to better correspond these uploaded scripts with other versions, but will clean this up once the paper is accepted for publication.
