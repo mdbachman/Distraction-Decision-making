@@ -48,6 +48,6 @@ The second level are the DDMs for the distractor trials. This includes the follo
 
 getGaze.m is an auxillary script used to get fixation related information.
 
-All models were estimated in MATLAB using a Sun Grid Engine computing cluster.
+All models were estimated in MATLAB using a Sun Grid Engine computing cluster. Each model can take anywhere from one to five days per person, so patience is necessary. This could be even longer if not run on a cluster computing grid.
 
 Note: Please forgive some of the odd names. I have kept them as is to better correspond these uploaded scripts with other versions, but will clean this up once the paper is accepted for publication.
