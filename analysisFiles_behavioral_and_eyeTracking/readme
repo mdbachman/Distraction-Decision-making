@@ -1,1 +1,4 @@
+Each condition is processed separately, and then both conditions are combined into a single analysis (combined Analysis.m). This script generates Figures 2-4 and corresponding statistics.
 
+
+Originally ran in MATLAB 2021b. 
