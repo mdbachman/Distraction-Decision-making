@@ -94,15 +94,15 @@ BIC_addm_nRV_fullInfoDistractions = fullInfoDistractions.ddm.noDist.Data_addm_fi
 
 
 % Now, identify the best-fitting Distraction model.
-BIC_partialInfoDistractions_acc = partialInfoDistractions.ddm.Dist.Data_2ndSampleDistDur2.chisq_all * 3 * log(50);
-BIC_partialInfoDistractions_dec = partialInfoDistractions.ddm.Dist.Data_decay.chisq_all * 3 * log(50);
-BIC_partialInfoDistractions_accFF = partialInfoDistractions.ddm.Dist.Data_firstFixnoRV.chisq_all * 3 * log(50);
-BIC_partialInfoDistractions_decFF = partialInfoDistractions.ddm.Dist.Data_decay_firstFixnoRV.chisq_all * 3 * log(50);
+BIC_partialInfoDistractions_acc = partialInfoDistractions.ddm.Dist.Data_2ndSampleDistDur2.chisq_all * 1 * log(50);
+BIC_partialInfoDistractions_dec = partialInfoDistractions.ddm.Dist.Data_decay.chisq_all * 1 * log(50);
+BIC_partialInfoDistractions_accFF = partialInfoDistractions.ddm.Dist.Data_firstFixnoRV.chisq_all * 1 * log(50);
+BIC_partialInfoDistractions_decFF = partialInfoDistractions.ddm.Dist.Data_decay_firstFixnoRV.chisq_all * 1 * log(50);
 
-BIC_fullInfoDistractions_acc = fullInfoDistractions.ddm.Dist.Data_2ndSampleDistDur2.chisq_all * 3 * log(50);
-BIC_fullInfoDistractions_dec = fullInfoDistractions.ddm.Dist.Data_decay.chisq_all * 3 * log(50);
-BIC_fullInfoDistractions_accFF = fullInfoDistractions.ddm.Dist.Data_firstFixnoRV.chisq_all * 3 * log(50);
-BIC_fullInfoDistractions_decFF = fullInfoDistractions.ddm.Dist.Data_decay_firstFixnoRV.chisq_all * 3 * log(50);
+BIC_fullInfoDistractions_acc = fullInfoDistractions.ddm.Dist.Data_2ndSampleDistDur2.chisq_all * 1 * log(50);
+BIC_fullInfoDistractions_dec = fullInfoDistractions.ddm.Dist.Data_decay.chisq_all * 1 * log(50);
+BIC_fullInfoDistractions_accFF = fullInfoDistractions.ddm.Dist.Data_firstFixnoRV.chisq_all * 1 * log(50);
+BIC_fullInfoDistractions_decFF = fullInfoDistractions.ddm.Dist.Data_decay_firstFixnoRV.chisq_all * 1 * log(50);
 
 % Decay best fits the partial-information condition
 [a,b,c,d]= ttest(BIC_partialInfoDistractions_dec,BIC_partialInfoDistractions_acc) % p = .004, t = -3.0230
