@@ -1,2 +1,2 @@
-Each condition is processed separately, and then both conditions are combined into a single analysis (combined Analysis.m). This script generates Figures 2-4 and corresponding statistics.  
+Each study is processed separately, but analyses for both are are found in  (fullAnalyses.m). This script generates Figures 2-4 and corresponding statistics.  
 Originally ran in MATLAB 2021b. Each processing script should take about half an hour to run every participant. The entire combinedAnalysis script should run within less than 10 minutes (with each individual statistics/figure taking a minute or so).
