@@ -1,7 +1,7 @@
 # Distraction-Decision-making
   Code repository for this code.  
   Author: Matthew D. Bachman, matthewdbachman@gmail.com  
-  Licensed under the MIT license. Last update: August 13th, 2025.
+  Licensed under the MIT license. Last update: June 25th, 2026.
 
 ## Table of contents
   1). "taskFiles", which holds the scripts used to run the actual experiment.  
